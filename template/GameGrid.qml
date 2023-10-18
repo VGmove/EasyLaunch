@@ -92,10 +92,9 @@ Rectangle {
 				Rectangle {
 					id: border
 					anchors.fill: parent
-					
 					color: "transparent"
 					border.color: "white"
-					radius: 10
+					radius: vpx(7)
 					border.width: parent.parent.activeFocus ? vpx(3) : vpx(0)
 				}
 
@@ -104,7 +103,7 @@ Rectangle {
 					maskSource: Rectangle {
 						width: logo.width
 						height: logo.height
-						radius: 10
+						radius: vpx(7)
 					}
 				}
 			}
