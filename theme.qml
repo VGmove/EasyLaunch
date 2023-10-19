@@ -1,5 +1,5 @@
-// EasyLaunch Theme
-// Copyright (C) 2023 Viktor Gr
+// EasyLaunch
+// Copyright (C) 2023 VGmove
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
