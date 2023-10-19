@@ -92,14 +92,14 @@ Rectangle {
 					radius: vpx(3)
 					border.width: parent.parent.activeFocus ? vpx(4) : vpx(0)
 				}
+			}
 
-				NumberAnimation on opacity {
-					id: fadeIn
-					from: 0
-					to: 1
-					duration: 2000
-					easing.type: Easing.OutBack 
-				}
+			NumberAnimation on opacity {
+				id: fadeIn
+				from: 0
+				to: 1
+				duration: 1500
+				easing.type: Easing.OutBack 
 			}
 
 			 Image {
