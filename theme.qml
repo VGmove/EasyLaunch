@@ -46,7 +46,7 @@ FocusScope {
 	}
 	
 	Component.onCompleted: {
-        home.play()
+		home.play()
     }
 
 	Keys.onPressed: {
@@ -54,7 +54,7 @@ FocusScope {
 			mainCollections.focus = true
 		}
 	}
-	
+
 	Item{
 		id: mainBackground
 		anchors.fill: parent
@@ -67,7 +67,6 @@ FocusScope {
 
 	FocusScope {
         id: mainCollections
-		focus: false
 		
 		width: parent.width
 		height: vpx(120)
@@ -77,6 +76,8 @@ FocusScope {
 		anchors.top: mainHeader.bottom
 		anchors.right: parent.right
 		anchors.left: parent.left
+
+		KeyNavigation.down: mainGameGrid
 
         Collections {
 			id: collections
@@ -138,7 +139,7 @@ FocusScope {
     FocusScope {
         id: mainGameGrid
 		focus: true
-		
+
 		anchors.leftMargin: vpx(120)
 		anchors.rightMargin: vpx(120)
 		anchors.top: separator.bottom
@@ -146,8 +147,10 @@ FocusScope {
 		anchors.right: parent.right
 		anchors.left: parent.left
 
+		KeyNavigation.up: mainCollections
+
         GameGrid {
-			id: gamegrid
+			id: games
 			currentCollection: collections.currentCollection
 		}
     }
