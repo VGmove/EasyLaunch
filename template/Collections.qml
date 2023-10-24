@@ -50,8 +50,6 @@ Rectangle {
     	preferredHighlightEnd: width /2 + currentItem.width /2
 		highlightRangeMode: ListView.StrictlyEnforceRange
 
-		KeyNavigation.down: mainGameGrid
-
 		onActiveFocusChanged: {
 			toggle.play()
 		}
@@ -104,8 +102,8 @@ Rectangle {
 			MouseArea {
 				anchors.fill: parent
 				onClicked: {
+					collectionView.focus = true
 					collectionView.currentIndex = index
-					collectionView.forceActiveFocus()
 				}
 				onWheel: {
 					wheel.accepted = true;

@@ -22,18 +22,7 @@ Rectangle {
 	color: "transparent"
 
 	property var currentCollection
-	
-	function up() {
-		gameView.moveCurrentIndexUp()
-	}
-	
-	function down() {
-		gameView.moveCurrentIndexDown()
-	}
-	
-	function run() {
-		currentCollection.games.get(gameView.currentIndex).launch()
-	}
+	readonly property var currentGame: gameView.model.get(gameView.currentIndex)
 
 	GridView {
 		id: gameView
@@ -49,8 +38,6 @@ Rectangle {
 		keyNavigationWraps: false
 		highlightMoveDuration: 100
 		highlightFollowsCurrentItem: true
-
-		KeyNavigation.up: mainCollections
 
 		onCurrentIndexChanged: { 
 			select.play()
@@ -116,8 +103,9 @@ Rectangle {
 			}
 			
 			Keys.onPressed: {
-				if (api.keys.isAccept(event)) {
-					run() 
+				if (api.keys.isAccept(event) && !event.isAutoRepeat) {
+					event.accepted = true;
+					currentGame.launch()
 				}
 			}
 			
@@ -129,7 +117,7 @@ Rectangle {
 				}
 
 				onDoubleClicked: {
-					run() 
+					currentGame.launch()
 				}
 			}
 		}
