@@ -10,5 +10,8 @@ A simple theme for quick launch games from your collection.
 - Clock and battery(if available in device) icons.
 - Displaying the number of games in the collection.
 
-## Installation
+# Installation
 Download the theme and place it in your [Pegasus theme directory](http://pegasus-frontend.org/docs/user-guide/installing-themes/).
+
+# Download
+[Download theme](https://github.com/VGmove/EasyLaunch/archive/refs/heads/main.zip)
