@@ -45,7 +45,7 @@ FocusScope {
 		}
 	}
 
-	readonly property var colorSchemes: ["Gray", "Steel", "Brown", "Fly"]
+	readonly property var colorSchemes: ["Gray", "Steel", "Graphite", "Fly", "Oliva", "Violet"]
 	readonly property var theme: {
 		var panels = "";
 		var highlight = "";
@@ -61,16 +61,28 @@ FocusScope {
 			highlight = "#b5a27d";
 			background = "#444f5c";
 		}
-		else if (settings.colorScheme === "Brown") {
-			panels = "#7d6b5e";
-			highlight = "#328abf";
-			background = "#5e5046";
+		else if (settings.colorScheme === "Graphite") {
+			panels = "#363d4b";
+			highlight = "#7da3ca";
+			background = "#20262d";
 		}
 
 		else if (settings.colorScheme === "Fly") {
-			panels = "#4d7687";
-			highlight = "#db4949";
+			panels = "#466870";
+			highlight = "#d35b5b";
 			background = "#244454";
+		}
+
+		else if (settings.colorScheme === "Oliva") {
+			panels = "#414f56";
+			highlight = "#a0b684";
+			background = "#20292a";
+		}
+
+		else if (settings.colorScheme === "Violet") {
+			panels = "#222738";
+			highlight = "#9072ed";
+			background = "#151823";
 		}
 
 		return {
