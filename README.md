@@ -6,7 +6,7 @@
 <b>A simple theme for quick launch games from your collection.</b>
 
 - Fast and simple navigation for selecting collections and games
-- Support for keyboard, mouse and gamepad navigation
+- Support keyboard, mouse and gamepad navigation
 - Convenient fullscreen button (overrides the default setting)
 - Ability to set a home collection that activates on startup
 - Clock and battery indicators (if supported by the device)
