@@ -17,7 +17,7 @@
 
 <img src=".meta/screenshot_3.png" width="400"/>   <img src=".meta/screenshot_4.png" width="400"/> <br>
 
-# Replace background
+# Change background
 Replace "background.jpg" in "Pegasus Frontend\themes\EasyLaunch\assets\img" and enable background display in the theme settings.
 
 # Installation
