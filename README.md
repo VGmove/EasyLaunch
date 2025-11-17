@@ -24,4 +24,4 @@ Replace "background.jpg" in "Pegasus Frontend\themes\EasyLaunch\assets\img" and 
 Download the theme and place it in your [Pegasus theme directory](http://pegasus-frontend.org/docs/user-guide/installing-themes/).
 
 # Download
-Download EasyLaunch theme [last releases](https://github.com/VGmove/EasyLaunch/archive/refs/heads/main.zip).
+Download EasyLaunch theme [last releases](https://github.com/vgmove/easy-launch/archive/refs/heads/main.zip).
